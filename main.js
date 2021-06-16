@@ -7,8 +7,11 @@ requestIdleCallback(() => {
     let j = 0
     document.body.innerHTML = document.body.innerHTML.replaceAll("<br>", () => (j++, j % 2 ? "&#x1f618;<p style='margin:0;'></p>" : "&#x1f917;<p style='margin:0;'></p>"))
 
-
     // 奇数個目の読点を🐣、偶数個目の読点を🐧
     let k = 0
     document.body.innerHTML = document.body.innerHTML.replaceAll("、", () => (k++, k % 2 ? "&#x1f423;" : "&#x1f427;"))
+
+    // 奇数個目の？を🥺、偶数個目の？を💦
+    let l = 0
+    document.body.innerHTML = document.body.innerHTML.replaceAll("？", () => (l++, l % 2 ? "&#x1F97A;" : "&#x1f4a6;"))
 })
